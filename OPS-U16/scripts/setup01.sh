@@ -44,7 +44,7 @@ iface $EXT_INTERFACE inet static
     address $CTL_EXT_IP
     netmask $NETMASK_ADD_EXT
     gateway $GATEWAY_IP_EXT
-    dns-nameservers 8.8.8.8
+    dns-nameservers 8.8.8.8 8.8.4.4
 
 # DATA VM
 auto $DATA_INTERFACE
@@ -77,7 +77,7 @@ iface $EXT_INTERFACE inet static
     address $COM1_EXT_IP
     netmask $NETMASK_ADD_EXT
     gateway $GATEWAY_IP_EXT
-    dns-nameservers 8.8.8.8
+    dns-nameservers 8.8.8.8 8.8.4.4
 
 auto $DATA_INTERFACE
 iface $DATA_INTERFACE inet static
@@ -110,7 +110,7 @@ iface $EXT_INTERFACE inet static
     address $COM2_EXT_IP
     netmask $NETMASK_ADD_EXT
     gateway $GATEWAY_IP_EXT
-    dns-nameservers 8.8.8.8
+    dns-nameservers 8.8.8.8 8.8.4.4
 
 auto $DATA_INTERFACE
 iface $DATA_INTERFACE inet static
