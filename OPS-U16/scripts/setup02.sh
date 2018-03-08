@@ -77,7 +77,7 @@ function install_database ()
 	sed -r -i 's/127\.0\.0\.1/0\.0\.0\.0/' $path_db_50server
 	sed -i 's/character-set-server  = utf8mb4/character-set-server  = utf8/' \
 	    $path_db_50server
-	sed -i 's/collation-server/#collation-server/'  $path_db_50server
+	sed -i 's/collation-server/#collation-server/' $path_db_50server
 
 	systemctl restart mysql
 
